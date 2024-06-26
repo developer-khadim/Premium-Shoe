@@ -1,7 +1,4 @@
 import React from "react";
-import icon from '../src/assets/amazon.png';
-import sheo from '../src/assets/sheo.png';
-
 const Hero = () => {
   return (
     <>
@@ -34,12 +31,12 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-center lg:items-start gap-2 my-4">
             <p className="text-[12px]">Also Available On</p>
-            <img src={icon} alt="a" className="w-[25px]" />
+            <img src="./src/assets/amazon.png" alt="a" className="w-[25px]" />
           </div>
         </div>
         <div className="w-full lg:order-2 lg:w-[40%] flex justify-center items-center mt-6 h-[40vh] order-1 lg:h-[66vh]">
           <img
-            src={sheo}
+            src="./src/assets/shoe.png"
             className="hover:rotate-45 transition duration-300 w-[80%] lg:w-[520px]"
             alt="Shoe"
           />
