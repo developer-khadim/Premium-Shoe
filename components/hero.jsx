@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
+import icon from "../src/assets/amazon.png";
+import icon2 from "../src/assets/Sheo.jpg";
+
 const Hero = () => {
   return (
     <>
       <section className=" mt-4 order flex flex-col lg:flex-row justify-between items-center w-full lg:w-[73vw] px-4 lg:px-0">
         <div className="flex flex-col w-full lg:order-1 lg:w-[50%] mb-8 lg:mb-0 order-2 ">
-          <h1 className="text-4xl lg:text-7xl font-extrabold text-center lg:text-left   ">
+          <h1 className="text-4xl lg:text-8xl font-extrabold text-center lg:text-left   ">
             YOUR FEET <br />
             DESERVE
             <br />
@@ -31,12 +35,12 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-center lg:items-start gap-2 my-4">
             <p className="text-[12px]">Also Available On</p>
-            <img src="./src/assets/amazon.png" alt="a" className="w-[25px]" />
+            <img src={icon} alt="a" className="w-[25px]" />
           </div>
         </div>
         <div className="w-full lg:order-2 lg:w-[40%] flex justify-center items-center mt-6 h-[40vh] order-1 lg:h-[66vh]">
           <img
-            src="./src/assets/shoe.png"
+            src={icon2}
             className="hover:rotate-45 transition duration-300 w-[80%] lg:w-[520px]"
             alt="Shoe"
           />
